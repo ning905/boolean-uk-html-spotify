@@ -1,12 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
 </head>
+
 <body>
-    
+
+    <header class="left-header">
+
+        <div class="logo-wrap">
+            <img class="logo" src="assets/icon/logo.svg" alt="Spotify logo">
+        </div>
+
+        <nav class="site-nav">
+            <ul>
+                <li>
+                    <a class="site-nav__item__link left-header__item" href="">
+                        <img class="site-nav__icon" src="assets/icon/home.svg" alt="Home">
+                        <span class="site-nav__item left-header__txt">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="site-nav__item__link left-header__item" href="">
+                        <img class="site-nav__icon" src="assets/icon/search.svg" alt="Search">
+                        <span class="site-nav__item left-header__txt">Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="site-nav__item__link left-header__item" href="">
+                        <img class="site-nav__icon" src="assets/icon/libreria.svg" alt="Your Library">
+                        <span class="site-nav__item left-header__txt">Your Library</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="playlist">
+
+            <h2 class="playlist__heading left-header__txt txt-white">Playlist</h2>
+
+            <div class="playlist__create-btn-wrap">
+                <button class="playlist__create-btn left-header__item" href="">
+                    <div class="playlist__create-btn__icon-wrap">
+                        <img class="playlist__create-btn__icon" src="assets/icon/add.svg" alt="Create Playlist">
+                    </div>
+                    <p class="playlist__create-btn__txt left-header__txt">Create Playlist</p>
+                </button>
+            </div>
+
+            <ul class="playlist__list">
+                <li>
+                    <a class="left-header__txt" href=""> Name Playlist</a>
+                </li>
+                <li>
+                    <a class="left-header__txt" href=""> Name Playlist</a>
+                </li>
+                <li>
+                    <a class="left-header__txt" href=""> Name Playlist</a>
+                </li>
+                <li>
+                    <a class="left-header__txt" href=""> Name Playlist</a>
+                </li>
+                <li>
+                    <a class="left-header__txt" href=""> Name Playlist</a>
+                </li>
+                <li>
+                    <a class="left-header__txt" href=""> Name Playlist</a>
+                </li>
+            </ul>
+
+        </section>
+
+
+        <div class="install-link-wrap">
+            <a class="install-link left-header__item" href="">
+                <img class="install-link__icon" src="assets/icon/download.svg" alt="Download">
+                <p class="install-link__txt left-header__txt">Install app</p>
+            </a>
+        </div>
+
+        <div class="account-btn-wrap">
+            <button class="account-btn left-header__item">
+                <img class="account-btn__profile-img" src="assets/icon/profile.svg" alt="Profile photo">
+                <p class="account-btn__username left-header__txt txt-white">Ning</p>
+            </button>
+        </div>
+
+    </header>
+
+
+    <section class="top-bar">
+        <a class="top-bar__upgrade-link" href="">
+            <p class="top-bar__upgrade-link__txt txt-white">EFFETTUA L'UPGRADE</p>
+        </a>
+    </section>
+
+
+    <main>
+        <nav class="feature">
+            <ul class="feature__list">
+                <li>
+                    <a href="">
+                        In evidenza
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Podcast
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Classifiche
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Generi e mood
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Nuove uscite
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Scopri
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="content">
+
+            <h2 class="content__heading txt-white">Recently played</h2>
+
+            <ul class="content__list">
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/metal_lifting.jpg" alt="Heavy Metal">
+                        <h3 class="content__item__heading txt-white">Heavy Metal</h3>
+                        <p class="content__item__sub-heading">Subtitle</p>
+                    </a>
+                </li>
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/stranger.jpeg" alt="Stranger Things">
+                        <h3 class="content__item__heading txt-white">
+                            Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)
+                        </h3>
+                        <p class="content__item__sub-heading">Subtitle</p>
+                    </a>
+                </li>
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/aquietplace.jpeg" alt="A quiet place">
+                        <h3>A quiet place</h3>
+                        <p class="content__item__sub-heading">Subtitle</p>
+                    </a>
+                </li>
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/split.jpeg" alt="Split">
+                        <h3 class="content__item__heading txt-white">Split</h3>
+                        <p class="content__item__sub-heading">Subtitle</p>
+                    </a>
+                </li>
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/cure.jpeg" alt="A cure for wellness">
+                        <h3 class="content__item__heading txt-white">A cure for wellness</h3>
+                        <p class="content__item__sub-heading">Subtitle</p>
+                    </a>
+                </li>
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/sinister.jpeg" alt="Sinister">
+                        <h3 class="content__item__heading txt-white">Sinister</h3>
+                        <p class="content__item__sub-heading">Subtitle</p>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2 class="content__heading txt-white">Creato per Ning</h2>
+            <p class="content__sub-heading">Più ascolti, più accurati saranno i suggerimenti.</p>
+
+            <ul class="content__list">
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/radar.jpeg" alt="Release Radar">
+                        <h3 class="content__item__heading txt-white">Release Radar</h3>
+                    </a>
+                </li>
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/mixdaily.jpeg" alt="Daily Mix 1">
+                        <h3 class="content__item__heading txt-white">Daily Mix 1</h3>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2 class="content__heading txt-white">Artisti più popolari</h2>
+            <p class="content__sub-heading">Più ascolti, più accurati saranno i suggerimenti.</p>
+
+            <ul class="content__list">
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/youg.jpeg" alt="">
+                        <h3 class="content__item__heading txt-white"></h3>
+                    </a>
+                </li>
+                <li class="content__item">
+                    <a class="content__item__link" href="">
+                        <img class="content__item__cover" src="assets/img/einaudi.jpeg" alt="">
+                        <h3 class="content__item__heading txt-white"></h3>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <footer class="bottom-bar">
+
+        <section class="now-playing">
+
+            <div class="now-playing__song">
+                <a href="">
+                    <img class="now-playing__song__cover" src="assets/img/sinister.jpeg" alt="Sinister">
+                </a>
+
+                <a class="now-playing__song__name txt-white" href="">
+                    Snister
+                </a>
+
+                <a class="now-playing__song__singer-name" href="">
+                    Brano Nome
+                </a>
+            </div>
+
+            <div class="now-playing__controls">
+                <button class="control-btn">
+                    <img class="btn__icon btn-like" src="" alt="like">
+                </button>
+
+                <button class="control-btn">
+                    <img class="btn__icon btn-add" src="" alt="folder">
+                </button>
+            </div>
+
+        </section>
+
+
+        <section class="player-controls">
+
+            <div class="player-control__btn--wrap">
+
+                <button class="player-control__btn btn-shuffle txt-white">
+                    <img class="btn__icon " src="" alt="Enable shuffle">
+                </button>
+
+                <button class="player-control__btn btn-pre txt-white">
+                    <img class="btn__icon" src="" alt="Previous">
+                </button>
+
+                <button class="player-control__btn btn-pause btn-lg txt-white">
+                    <img class="btn__icon" src="" alt="Pause">
+                </button>
+
+                <button class="player-control__btn btn-next txt-white">
+                    <img class="btn__icon" src="" alt="Next">
+                </button>
+
+                <button class="player-control__btn btn-repeat txt-white">
+                    <img class="btn__icon" src="" alt="Enable repeat">
+                </button>
+
+            </div>
+
+            <div class="playback-bar">
+                <div class="playback__position txt-white">
+                    0:25
+                </div>
+
+                <div class="progress-bar playback__progress-bar">
+                    <img src="" alt="Timeline">
+                </div>
+
+                <div class="playback__duration txt-white">
+                    4:35
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="device-controls">
+
+            <button class="control-btn btn-queue txt-white">
+                <img src="" alt="queue">
+            </button>
+
+            <button class="control-btn btn-device txt-white">
+                <img src="" alt="device">
+            </button>
+
+            <button class="control-btn btn-volume txt-white">
+                <img src="" alt="volume">
+            </button>
+
+            <div class="progress-bar device-controls__volume-bar">
+                <img src="" alt="volume-bar">
+            </div>
+
+        </section>
+
+    </footer>
+
+
 </body>
+
 </html>
