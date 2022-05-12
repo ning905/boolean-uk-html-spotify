@@ -294,6 +294,39 @@ main {
     background-color: #343840;
 }
 
+.content__item__play__icon-wrap {
+    display: none;
+}
+
+.content__item__play__icon {
+    height: 25px;
+    width: 25px;
+
+    transition: 50ms;
+}
+
+.content__item__link:hover .content__item__play__icon-wrap {
+    display: grid;
+    place-items: center;
+
+    padding: 0.6rem;
+    background-color: #ADFF2E;
+    border-radius: 50%;
+    position: absolute;
+
+    bottom: 20px;
+    right: 18px;
+}
+
+.content__item__play__icon:hover {
+    height: 28px;
+    width: 28px;
+}
+
+.content__item__cover-wrap {
+    position: relative;
+}
+
 .content__item__cover {
     width: 100%;
 }
