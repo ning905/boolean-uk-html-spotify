@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 
-
+/* Page general layout */
 body {
     color: #A3A3A3;
-    font-family: Arial, Helvetica, sans-serif;
 
     width: 100vw;
     height: 100vh;
@@ -22,6 +23,8 @@ body {
     grid-template-rows: 1fr auto;
 }
 
+
+/* Typography */
 a {
     text-decoration: none;
     color: inherit;
@@ -44,15 +47,14 @@ button {
 
 .txt-reg {
     font-size: 0.8rem;
-    font-weight: 600;
 }
 
 
 
-
+/* Left-header general color, layouts and sizes */
 .left-header {
     background-color: #000000;
-    padding: 1.5rem 1.2rem;
+    padding: 1.5rem 1.2rem 0 1.2rem;
 
     width: 241px;
 
@@ -64,13 +66,19 @@ button {
     grid-template-rows: auto auto auto 1fr auto auto;
 }
 
+.left-header__item-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
 .left-header__txt {
     margin: 0.65rem 0;
     display: inline-block;
 }
 
 
-
+/* Logo */
 .logo-wrap {
     height: 60px;
 
@@ -84,7 +92,7 @@ button {
 }
 
 
-
+/* Navigation */
 .site-nav {
     grid-area: site-nav;
 }
@@ -95,14 +103,7 @@ button {
 }
 
 
-.left-header__item-container {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-
-
+/* Playlist */
 .playlist {
     grid-area: playlist;
 }
@@ -113,13 +114,14 @@ button {
     margin-bottom: 0.8rem;
 }
 
+/* Create playlist btn */
+.playlist__create-btn__txt {
+    font-size: 0.9rem;
+}
+
 .playlist__create-btn__icon {
     height: 1rem;
     width: 1rem;
-}
-
-.playlist__create-btn__txt {
-    font-size: 0.9rem;
 }
 
 .playlist__create-btn__icon-wrap {
@@ -138,6 +140,7 @@ button {
 }
 
 
+/* Install app */
 .install-link__icon {
     width: 0.8rem;
     height: 0.8rem;
@@ -149,6 +152,8 @@ button {
     border-bottom: 1px solid #A3A3A3;
 }
 
+
+/* Personal account */
 .account-btn__profile-img {
     width: 1.5rem;
     height: 1.5rem;
@@ -165,6 +170,7 @@ button {
 }
 
 
+/* Top-bar general color and layout */
 .top-bar {
     grid-area: top-bar;
 
@@ -178,6 +184,7 @@ button {
     justify-content: end;
 }
 
+/* Top-bar link */
 .top-bar__upgrade-link {
     border: 1px solid #FFF;
     border-radius: 3rem;
@@ -187,17 +194,17 @@ button {
 }
 
 
-
+/* Main content layout */
 main {
     background-color: #141922;
     grid-area: main;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 
     display: grid;
     row-gap: 0.8rem;
 }
 
-
+/* Feature list */
 .feature__link__txt {
     text-transform: uppercase;
 }
@@ -229,9 +236,7 @@ main {
 }
 
 
-
-
-
+/* Content list */
 .content-heading {
     margin-top: 1rem;
     margin-left: 1.5rem;
@@ -241,23 +246,12 @@ main {
     row-gap: 0.5rem;
 }
 
-/* .content__sub-heading {
-    margin-top: 0.5rem;
-    margin-left: 1.5rem;
-} */
-
 .content__list {
     margin-top: 1rem;
     display: flex;
-
-
-    /* overflow-x: scroll;
-    overflow-y: hidden; */
 }
 
-
-
-
+/* Single content item */
 .content__item__link {
     display: grid;
     row-gap: 0.5rem;
@@ -287,14 +281,121 @@ main {
 }
 
 
-
+/* Bottom-bar general layout */
 .bottom-bar {
     background-color: #181818;
 
     grid-area: footer;
+
+    height: 90px;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto minmax(30vw, 1fr) auto;
+    place-items: center;
 }
 
 
-.bottom-bar img {
-    height: 35px;
+/* Button icons size */
+.footer__control-btn__icon {
+    height: 1rem;
+    width: 1rem;
+
+    margin-right: 0.8rem;
+}
+
+.player-control__btn__icon {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.player-control__btn__icon-lg {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+
+/* Button icons color and hover effect */
+.btn__icon-white {
+    fill: #FFF;
+}
+
+.btn__icon-grey {
+    fill: #A3A3A3;
+    fill-opacity: 0.7;
+}
+
+.btn__icon-grey:hover {
+    fill: #FFF;
+    fill-opacity: 1;
+}
+
+
+/* Now-playing layout */
+.now-playing__song__cover {
+    height: 45px;
+}
+
+.now-playing {
+    margin-left: 1rem;
+
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    gap: 1rem;
+}
+
+
+
+/* Player */
+audio {
+    display: none;
+}
+
+.player-controls {
+    display: grid;
+    place-items: center;
+    row-gap: 0.5rem;
+}
+
+.player-control__btn--wrap {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1.8rem;
+}
+
+.timeline-wrap {
+    display: grid;
+    column-gap: 1.5rem;
+    align-items: center;
+    grid-template-columns: auto 30vw auto;
+}
+
+
+/* Progress-bar */
+.progress-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar__current {
+    border: 1.5px solid #FFF;
+    width: 23%;
+}
+
+.progress-bar__duration {
+    border: 1.5px solid #A3A3A3;
+    width: 77%;
+}
+
+/* Device controls */
+.device-controls {
+    margin-right: 1rem;
+
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
 }
