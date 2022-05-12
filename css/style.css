@@ -12,15 +12,17 @@ body {
     color: #A3A3A3;
 
     width: 100vw;
-    height: 100vh;
+}
 
+.page-container {
     display: grid;
     grid-template-areas:
         "left-header top-bar"
-        "left-header main"
-        "footer footer";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;
+        "left-header main";
+
+    position: fixed;
+    bottom: 90px;
+    height: calc(100vh - 90px);
 }
 
 
@@ -54,7 +56,8 @@ button {
 /* Left-header general color, layouts and sizes */
 .left-header {
     background-color: #000000;
-    padding: 1.5rem 1.2rem 0 1.2rem;
+    padding-top: 1.5rem;
+    padding-right: 1.2rem;
 
     width: 241px;
 
@@ -67,6 +70,8 @@ button {
 }
 
 .left-header__item-container {
+    padding-left: 1.2rem;
+
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -81,6 +86,8 @@ button {
 /* Logo */
 .logo-wrap {
     height: 60px;
+
+    padding-left: 1.2rem;
 
     display: flex;
 
@@ -100,6 +107,18 @@ button {
 .site-nav__icon {
     height: 25px;
     width: 25px;
+}
+
+.site-nav__item__link {
+    border-left: 2px solid #000000;
+}
+
+.site-nav__item__link:hover {
+    border-left-color: #ADFF2E;
+}
+
+.site-nav__item__link:hover .site-nav__txt {
+    color: #FFF;
 }
 
 
@@ -142,13 +161,16 @@ button {
 
 /* Install app */
 .install-link__icon {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 1rem;
+    height: 1rem;
+
+    margin-left: -1.2rem;
 }
 
 .install-link-wrap {
     grid-area: install;
 
+    margin-left: 1.2rem;
     border-bottom: 1px solid #A3A3A3;
 }
 
@@ -214,10 +236,12 @@ main {
     align-items: center;
 
     padding-bottom: 0.2rem;
+
+    border-bottom: 2px solid #141922;
 }
 
 .feature__link:hover {
-    border-bottom: 2px solid #ADFF2E;
+    border-bottom-color: #ADFF2E;
 }
 
 .feature-list {
@@ -285,9 +309,13 @@ main {
 .bottom-bar {
     background-color: #181818;
 
-    grid-area: footer;
+    /* grid-area: footer; */
 
     height: 90px;
+
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 
     display: grid;
     grid-auto-flow: column;

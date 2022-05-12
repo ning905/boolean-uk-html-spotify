@@ -11,256 +11,264 @@
 
 <body>
 
-    <header class="left-header">
+    <div class="page-container">
 
-        <div class="logo-wrap">
-            <img class="logo" src="assets/icon/logo.svg" alt="Spotify logo">
-        </div>
+        <header class="left-header">
 
-        <nav class="site-nav">
-            <ul>
-                <li>
-                    <a class="site-nav__item__link left-header__item-container" href="">
-                        <img class="site-nav__icon" src="assets/icon/home.svg" alt="Home">
-                        <span class="site-nav__item left-header__txt txt-reg">Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="site-nav__item__link left-header__item-container" href="">
-                        <img class="site-nav__icon" src="assets/icon/search.svg" alt="Search">
-                        <span class="site-nav__item left-header__txt txt-reg">Search</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="site-nav__item__link left-header__item-container" href="">
-                        <img class="site-nav__icon" src="assets/icon/libreria.svg" alt="Your Library">
-                        <span class="site-nav__item left-header__txt txt-reg">Your Library</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <div class="logo-wrap">
+                <a href="index.html">
+                    <img class="logo" src="assets/icon/logo.svg" alt="Spotify logo">
+                </a>
+            </div>
 
-        <section class="playlist">
+            <nav class="site-nav">
+                <ul>
+                    <li>
+                        <a class="site-nav__item__link left-header__item-container" href="index.html">
+                            <img class="site-nav__icon" src="assets/icon/home.svg" alt="Home">
+                            <span class="site-nav__txt left-header__txt txt-reg">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="site-nav__item__link left-header__item-container" href="">
+                            <img class="site-nav__icon" src="assets/icon/search.svg" alt="Search">
+                            <span class="site-nav__txt left-header__txt txt-reg">Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="site-nav__item__link left-header__item-container" href="">
+                            <img class="site-nav__icon" src="assets/icon/libreria.svg" alt="Your Library">
+                            <span class="site-nav__txt left-header__txt txt-reg">Your Library</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-            <h2 class="playlist__heading left-header__txt txt-reg txt-white">Playlist</h2>
+            <section class="playlist">
 
-            <div class="playlist__create-btn-wrap">
-                <button class="playlist__create-btn left-header__item-container" href="">
-                    <div class="playlist__create-btn__icon-wrap">
-                        <img class="playlist__create-btn__icon" src="assets/icon/add.svg" alt="Create Playlist">
-                    </div>
-                    <p class="playlist__create-btn__txt left-header__txt txt-reg">Create Playlist</p>
+                <h2 class="playlist__heading left-header__item-container left-header__txt txt-reg txt-white">
+                    Playlist
+                </h2>
+
+                <div class="playlist__create-btn-wrap">
+                    <button class="playlist__create-btn left-header__item-container" href="">
+                        <div class="playlist__create-btn__icon-wrap">
+                            <img class="playlist__create-btn__icon" src="assets/icon/add.svg" alt="Create Playlist">
+                        </div>
+                        <p class="playlist__create-btn__txt left-header__txt txt-reg">Create Playlist</p>
+                    </button>
+                </div>
+
+                <ul class="playlist__list">
+                    <li class="left-header__item-container">
+                        <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
+                    </li>
+                    <li class="left-header__item-container">
+                        <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
+                    </li>
+                    <li class="left-header__item-container">
+                        <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
+                    </li>
+                    <li class="left-header__item-container">
+                        <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
+                    </li>
+                    <li class="left-header__item-container">
+                        <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
+                    </li>
+                    <li class="left-header__item-container">
+                        <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <div class="install-link-wrap">
+                <a class="install-link left-header__item-container" href="">
+                    <img class="install-link__icon" src="assets/icon/download.svg" alt="Download">
+                    <p class="left-header__txt txt-reg">Install app</p>
+                </a>
+            </div>
+
+            <div class="account-btn-wrap  left-header__item-container">
+                <button class="account-btn left-header__item-container">
+                    <img class="account-btn__profile-img" src="assets/icon/profile.svg" alt="Profile photo">
+                    <p class="left-header__txt txt-reg txt-white">Ning</p>
                 </button>
             </div>
 
-            <ul class="playlist__list">
-                <li>
-                    <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
-                </li>
-                <li>
-                    <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
-                </li>
-                <li>
-                    <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
-                </li>
-                <li>
-                    <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
-                </li>
-                <li>
-                    <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
-                </li>
-                <li>
-                    <a class="left-header__txt txt-reg" href=""> Name Playlist</a>
-                </li>
-            </ul>
-
-        </section>
+        </header>
 
 
-        <div class="install-link-wrap">
-            <a class="install-link left-header__item-container" href="">
-                <img class="install-link__icon" src="assets/icon/download.svg" alt="Download">
-                <p class="left-header__txt txt-reg">Install app</p>
+        <section class="top-bar">
+            <a class="top-bar__upgrade-link" href="">
+                <p class="txt-white txt-reg">EFFETTUA L'UPGRADE</p>
             </a>
-        </div>
-
-        <div class="account-btn-wrap">
-            <button class="account-btn left-header__item-container">
-                <img class="account-btn__profile-img" src="assets/icon/profile.svg" alt="Profile photo">
-                <p class="left-header__txt txt-reg txt-white">Ning</p>
-            </button>
-        </div>
-
-    </header>
-
-
-    <section class="top-bar">
-        <a class="top-bar__upgrade-link" href="">
-            <p class="txt-white txt-reg">EFFETTUA L'UPGRADE</p>
-        </a>
-    </section>
-
-
-    <main>
-        <nav class="feature-list-wrap">
-            <ul class="feature-list">
-                <li>
-                    <a class="feature__link" href="">
-                        <p class="feature__link__txt txt-reg">In evidenza</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="feature__link" href="">
-                        <p class="feature__link__txt txt-reg">Podcast</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="feature__link" href="">
-                        <p class="feature__link__txt txt-reg">Classifiche</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="feature__link" href="">
-                        <p class="feature__link__txt txt-reg">Generi e mood</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="feature__link" href="">
-                        <p class="feature__link__txt txt-reg">Nuove uscite</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="feature__link" href="">
-                        <p class="feature__link__txt txt-reg">Scopri</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <section class="content">
-
-            <div class="content-heading">
-                <h2 class="txt-white">Recently played</h2>
-            </div>
-
-            <ul class="content__list">
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/metal_lifting.jpg" alt="Heavy Metal">
-                        </div>
-                        <h3 class="content__item__heading txt-white">Heavy Metal</h3>
-                        <p class="content__item__sub-heading txt-reg">Subtitle</p>
-                    </a>
-                </li>
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/stranger.jpeg" alt="Stranger Things">
-                        </div>
-                        <h3 class="content__item__heading txt-white">
-                            Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)
-                        </h3>
-                        <p class="content__item__sub-heading txt-reg">Subtitle</p>
-                    </a>
-                </li>
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/aquietplace.jpeg" alt="A quiet place">
-                        </div>
-                        <h3 class="content__item__heading txt-white">A quiet place</h3>
-                        <p class="content__item__sub-heading txt-reg">Subtitle</p>
-                    </a>
-                </li>
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/split.jpeg" alt="Split">
-                        </div>
-                        <h3 class="content__item__heading txt-white">Split</h3>
-                        <p class="content__item__sub-heading txt-reg">Subtitle</p>
-                    </a>
-                </li>
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/cure.jpeg" alt="A cure for wellness">
-                        </div>
-                        <h3 class="content__item__heading txt-white">A cure for wellness</h3>
-                        <p class="content__item__sub-heading txt-reg">Subtitle</p>
-                    </a>
-                </li>
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/sinister.jpeg" alt="Sinister">
-                        </div>
-                        <h3 class="content__item__heading txt-white">Sinister</h3>
-                        <p class="content__item__sub-heading txt-reg">Subtitle</p>
-                    </a>
-                </li>
-            </ul>
-
         </section>
 
-        <section>
 
-            <div class="content-heading">
-                <h2 class="txt-white">Creato per Ning</h2>
-                <p class="txt-reg">Più ascolti, più accurati saranno i suggerimenti.</p>
-            </div>
+        <main>
+            <nav class="feature-list-wrap">
+                <ul class="feature-list">
+                    <li>
+                        <a class="feature__link" href="">
+                            <p class="feature__link__txt txt-reg">In evidenza</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="feature__link" href="">
+                            <p class="feature__link__txt txt-reg">Podcast</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="feature__link" href="">
+                            <p class="feature__link__txt txt-reg">Classifiche</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="feature__link" href="">
+                            <p class="feature__link__txt txt-reg">Generi e mood</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="feature__link" href="">
+                            <p class="feature__link__txt txt-reg">Nuove uscite</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="feature__link" href="">
+                            <p class="feature__link__txt txt-reg">Scopri</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-            <ul class="content__list">
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/radar.jpeg" alt="Release Radar">
-                        </div>
-                        <h3 class="content__item__heading txt-white">Release Radar</h3>
-                    </a>
-                </li>
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/mixdaily.jpeg" alt="Daily Mix 1">
-                        </div>
-                        <h3 class="content__item__heading txt-white">Daily Mix 1</h3>
-                    </a>
-                </li>
-            </ul>
+            <section class="content">
 
-        </section>
+                <div class="content-heading">
+                    <h2 class="txt-white">Recently played</h2>
+                </div>
 
-        <section>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/metal_lifting.jpg" alt="Heavy Metal">
+                            </div>
+                            <h3 class="content__item__heading txt-white">Heavy Metal</h3>
+                            <p class="content__item__sub-heading txt-reg">Subtitle</p>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/stranger.jpeg" alt="Stranger Things">
+                            </div>
+                            <h3 class="content__item__heading txt-white">
+                                Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)
+                            </h3>
+                            <p class="content__item__sub-heading txt-reg">Subtitle</p>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/aquietplace.jpeg" alt="A quiet place">
+                            </div>
+                            <h3 class="content__item__heading txt-white">A quiet place</h3>
+                            <p class="content__item__sub-heading txt-reg">Subtitle</p>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/split.jpeg" alt="Split">
+                            </div>
+                            <h3 class="content__item__heading txt-white">Split</h3>
+                            <p class="content__item__sub-heading txt-reg">Subtitle</p>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/cure.jpeg" alt="A cure for wellness">
+                            </div>
+                            <h3 class="content__item__heading txt-white">A cure for wellness</h3>
+                            <p class="content__item__sub-heading txt-reg">Subtitle</p>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/sinister.jpeg" alt="Sinister">
+                            </div>
+                            <h3 class="content__item__heading txt-white">Sinister</h3>
+                            <p class="content__item__sub-heading txt-reg">Subtitle</p>
+                        </a>
+                    </li>
+                </ul>
 
-            <div class="content-heading">
-                <h2 class="txt-white">Artisti più popolari</h2>
-                <p class="txt-reg">Più ascolti, più accurati saranno i suggerimenti.</p>
-            </div>
+            </section>
 
-            <ul class="content__list">
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/youg.jpeg" alt="">
-                        </div>
-                        <h3 class="content__item__heading txt-white"></h3>
-                    </a>
-                </li>
-                <li class="content__item">
-                    <a class="content__item__link" href="">
-                        <div class="content__item__cover-wrap">
-                            <img class="content__item__cover" src="assets/img/einaudi.jpeg" alt="">
-                        </div>
-                        <h3 class="content__item__heading txt-white"></h3>
-                    </a>
-                </li>
-            </ul>
+            <section>
 
-        </section>
+                <div class="content-heading">
+                    <h2 class="txt-white">Creato per Ning</h2>
+                    <p class="txt-reg">Più ascolti, più accurati saranno i suggerimenti.</p>
+                </div>
 
-    </main>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/radar.jpeg" alt="Release Radar">
+                            </div>
+                            <h3 class="content__item__heading txt-white">Release Radar</h3>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/mixdaily.jpeg" alt="Daily Mix 1">
+                            </div>
+                            <h3 class="content__item__heading txt-white">Daily Mix 1</h3>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <div class="content-heading">
+                    <h2 class="txt-white">Artisti più popolari</h2>
+                    <p class="txt-reg">Più ascolti, più accurati saranno i suggerimenti.</p>
+                </div>
+
+                <ul class="content__list">
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/youg.jpeg" alt="">
+                            </div>
+                            <h3 class="content__item__heading txt-white"></h3>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a class="content__item__link" href="">
+                            <div class="content__item__cover-wrap">
+                                <img class="content__item__cover" src="assets/img/einaudi.jpeg" alt="">
+                            </div>
+                            <h3 class="content__item__heading txt-white"></h3>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+        </main>
+
+    </div>
 
 
     <footer class="bottom-bar">
