@@ -252,8 +252,6 @@ main {
 /* Feature list */
 .feature__link__txt {
     text-transform: uppercase;
-    /* width: 120px;
-    text-align: center; */
 }
 
 .feature__link {
@@ -285,7 +283,6 @@ main {
 
 .feature-list-wrap {
     margin: 1.5rem 0.8rem 0 1rem;
-
 }
 
 /* Content list */
