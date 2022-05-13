@@ -350,8 +350,7 @@ main {
 .content__item__link:hover .content__item__play__icon-wrap {
     display: grid;
     place-items: center;
-
-    padding: 0.6rem;
+    padding: 1rem;
     background-color: #ADFF2E;
     border-radius: 50%;
     position: absolute;
